@@ -1,0 +1,20 @@
+// Global variables
+$primary-color: #FF7D1A;
+$secondary-color: #F7F8FD;
+$primary-text-color: #A7B2C3;
+$navbar-text-color: #B3B8BE;
+$font-stack: 'Kumbh Sans', sans-serif;
+$regular-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
+$extrabold-weight: 800;
+
+* { // restart default styles
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack;
+}
