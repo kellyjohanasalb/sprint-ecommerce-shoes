@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sneakers</title>
+	<link rel="icon" type="image/jpg" href="./assets/icons/favicon.png">
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__nav">
+				<img class="header__menu" src="../assets/images/icon-menu.svg" alt="menu">
+				<a href="home.html"><img class="header__logo" src="../assets/images/logo.svg" alt="logo"></a>
+				<nav class="navbar">
+					<ul class="navbar__items">
+						<li><a href="/" class="navbar__link">Collections</a></li>
+						<li><a href="#/men" class="navbar__link">Men</a></li>
+						<li><a href="#/women" class="navbar__link">Women</a></li>
+						<li><a href="#" class="navbar__link">Account</a></li>
+						<li><a href="#" class="navbar__link">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__cart-avatar">
+				<div class="header__cart">
+					<div class="header__cart--counter">0</div>
+					<img src="../assets/images/icon-cart.svg" alt="shopping cart icon">
+				</div>
+				<img class="header__avatar" src="../assets/images/image-avatar.png" alt="avatar">
+			</div>
+		</header>
+		<main class="main-content" id="main-content">
+			<section class="gallery">
+				<div class="gallery__image-container">
+					<div class="gallery__image">
+						<img class="image" src="./assets/images/loadingScreen.png" alt="product">
+					</div>
+					<button class="gallery__previuos">
+						<img src="./assets/images/icon-previous.svg" alt="previus icon">
+					</button>	
+					<button class="gallery__next">
+						<img src="./assets/images/icon-next.svg" alt="next icon">
+					</button>
+				</div>
+				<div class="gallery__thumbnails">
+					<img id="thumbnail-1" class="gallery__thumbnail" src="./assets/images/loadingScreen.png" alt="thumbnail" style="width: 75px; height: 75px;">
+					<img id="thumbnail-2" class="gallery__thumbnail" src="./assets/images/loadingScreen.png" alt="thumbnail" style="width: 75px; height: 75px;">
+					<img id="thumbnail-3" class="gallery__thumbnail" src="./assets/images/loadingScreen.png" alt="thumbnail" style="width: 75px; height: 75px;">
+					<img id="thumbnail-4" class="gallery__thumbnail" src="./assets/images/loadingScreen.png" alt="thumbnail" style="width: 75px; height: 75px;">
+				</div>
+			</section>
+			<section class="product-details">
+				<span class="product-details__company">sneaker company</span>
+				<h1 class="product-details__title">Fall Limited Edition Sneakers</h1>
+				<p class="product-details__description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+				</p>
+				<div class="product-details__prices">
+					<p class="product-details__current">$125.00 <span class="product-details__discount">50%</span> </p>
+					<span class="product-details__last">$250.00</span>
+				</div>
+				<div class="product-details__product-quantity">
+					<div class="quantity">
+						<button class="minus-quantity" type="button">
+							<img  src="./assets/images/icon-minus.svg" alt="minus symbol">
+						</button>
+						<span class="quantity__number">0</span>
+						<button class="plus-quantity" type="button">
+							<img src="./assets/images/icon-plus.svg" alt="plus symbol">
+						</button>
+					</div>
+					<button type="button" class="product-details__button">
+						<img src="./assets/images/icon-cart-white.svg" alt="cart icon">
+						<span>Add to cart</span>
+					</button>
+				</div>
+			</section>
+
+			<!-- modal shopping cart start -->
+			<div class="cart-modal">
+				<p class="cart-modal__title">Cart</p>
+				<div class="cart-modal__checkout-container">
+					<div class="cart-modal__detail-container">
+						<img class="thumbnail-image" src="./assets/images/image-product-1-thumbnail.jpg" alt="thumbnail">
+						<div>
+							<p class="cart-modal__product">Autumn Limited Edition..</p>
+							<p class="cart-modal__price">$125.00 x3 <span>$375.00</span></p>
+						</div>
+						<img class="cart-modal__delete" src="./assets/images/icon-delete.svg" alt="delete">
+					</div>
+					<button class="cart-modal__checkout">Checkout</button>
+				</div>
+			</div>
+			<!-- modal shopping cart end -->	
+
+		</main>
+	</div>
+	<!-- navbar modal start -->
+	<div class="modal-navbar__background">
+		<nav class="modal-navbar">
+			<img class="modal-navbar__close-icon" src="../assets/images/icon-close.svg" alt="close">
+			<ul class="modal-navbar__items">
+				<li><a href="#" class="modal-navbar__link">Collections</a></li>
+				<li><a href="#" class="modal-navbar__link">Men</a></li>
+				<li><a href="#" class="modal-navbar__link">Women</a></li>
+				<li><a href="#" class="modal-navbar__link">Account</a></li>
+				<li><a href="#" class="modal-navbar__link">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- navbar modal end -->
+
+
+	<!-- modal checkout start -->
+	<div class="modal-checkout__background">
+		<div class="modal-checkout">
+		<img class="modal-checkout__close-icon" src="../assets/images/icon-close.svg" alt="close">
+		<form class="modal-checkout__form">
+			<input class="modal-checkout__input" name="name" id="input-name" type="text" placeholder="Nombre"/>
+			<input class="modal-checkout__input" name="identification" id="input-id" type="text" placeholder="Cedula"/>
+			<input class="modal-checkout__input" name="creditcard" id="input-creditcard" type="text" placeholder="Tarjeta de credito"/>
+			<button class="modal-checkout__button" type="submit">Enviar datos</button>
+		</form>
+		</div>
+	</div>
+	<!-- modal checkout start -->
+	
+
+	<!-- gallery modal start -->
+	<div class="modal-gallery__background">
+		<section class="modal-gallery">
+			<div class="modal-gallery__close-container">
+				<img class="modal-gallery__close" src="./assets/images/icon-close.svg" alt="">
+			</div>
+			<div class="modal-gallery__image-container">
+				<div class="modal-gallery__image">
+					<img class="modal-image" src="./assets/images/loadingScreen.png" alt="product">
+				</div>
+				<button class="modal-gallery__previuos">
+					<img src="./assets/images/icon-previous.svg" alt="previus icon">
+				</button>
+				<button class="modal-gallery__next">
+					<img src="./assets/images/icon-next.svg" alt="next icon">
+				</button>
+			</div>
+			<div class="modal-gallery__thumbnails">
+				<img id="modal-thumbnail-1" class="modal-gallery__thumbnail" src="./assets/images/loadingScreen.png" alt="thumbnail" style="width: 75px; height: 75px;">
+				<img id="modal-thumbnail-2" class="modal-gallery__thumbnail" src="./assets/images/loadingScreen.png" alt="thumbnail" style="width: 75px; height: 75px;">
+				<img id="modal-thumbnail-3" class="modal-gallery__thumbnail" src="./assets/images/loadingScreen.png" alt="thumbnail" style="width: 75px; height: 75px;">
+				<img id="modal-thumbnail-4" class="modal-gallery__thumbnail" src="./assets/images/loadingScreen.png" alt="thumbnail" style="width: 75px; height: 75px;">
+			</div>
+		</section>
+	</div>
+	<!-- gallery modal end -->
+	<script src="index.js"></script>
+	<script src="./checkoutForm.js"></script>
+	<!-- <script src="./main.js"></script> -->
+</body>
+</html>
